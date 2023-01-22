@@ -31,7 +31,7 @@ const StudentList = () => {
       const studentEl = document.createElement('li');
       const studentImg = document.createElement('img');
       studentImg.src = URL.createObjectURL(student.photo);
-      studentImg.height = "100"; // ces deux lignes servent à controler la taille de l'image.
+      studentImg.height = "100"; // ces deux lignes servent à controler les dimensions de l'image.
       studentImg.width = "100"; // 
       studentEl.innerHTML += ` <button data-index="${index}" onclick="onClick(event)">Supprimer</button> ${student.name}` ;
       studentEl.appendChild(studentImg);
